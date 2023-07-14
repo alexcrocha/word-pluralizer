@@ -1,6 +1,6 @@
 {
   "name": "word-pluralizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple word pluralizer and singularizer",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,16 @@
     "url": "git+https://github.com/alexcrocha/word-pluralizer.git "
   },
   "keywords": [
+    "word",
+    "plural",
     "pluralize",
+    "pluralizer",
+    "singular",
     "singularize",
-    "word"
+    "singularizer",
+    "inflect",
+    "inflection",
+    "inflector"
   ],
   "author": "Alex Rocha",
   "license": "ISC",
