@@ -5,9 +5,11 @@ function createInflector() {
   let uncountables = [];
 
   function plural(rule, replacement) {
+    plurals.unshift([new RegExp(rule, 'i'), replacement]);
   }
 
   function singular(rule, replacement) {
+    singulars.unshift([new RegExp(rule, 'i'), replacement]);
   }
 
   function irregular(singular, plural) {
