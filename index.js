@@ -13,9 +13,12 @@ function createInflector() {
   }
 
   function irregular(singular, plural) {
+    irregulars[singular.toLowerCase()] = plural;
+    irregulars[plural.toLowerCase()] = singular;
   }
 
   function uncountable(words) {
+    uncountables = uncountables.concat(words.map(word => word.toLowerCase()));
   }
 
   function pluralize(word) {
