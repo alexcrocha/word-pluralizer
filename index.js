@@ -22,9 +22,25 @@ function createInflector() {
   }
 
   function pluralize(word) {
+    if (uncountables.includes(word.toLowerCase())) return word;
+    if (irregulars[word.toLowerCase()]) return irregulars[word.toLowerCase()];
+
+    for (let [rule, replacement] of plurals) {
+      if (rule.test(word)) return word.replace(rule, replacement);
+    }
+
+    return word;
   }
 
   function singularize(word) {
+    if (uncountables.includes(word.toLowerCase())) return word;
+    if (irregulars[word.toLowerCase()]) return irregulars[word.toLowerCase()];
+
+    for (let [rule, replacement] of singulars) {
+      if (rule.test(word)) return word.replace(rule, replacement);
+    }
+
+    return word;
   }
 
   return {
