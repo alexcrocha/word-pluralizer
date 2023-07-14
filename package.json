@@ -1,11 +1,27 @@
 {
   "name": "word-pluralizer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple word pluralizer and singularizer",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcrocha/word-pluralizer.git "
+  },
+  "keywords": [
+    "pluralize",
+    "singularize",
+    "word"
+  ],
+  "author": "Alex Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcrocha/word-pluralizer/issues"
+  },
+  "homepage": "https://github.com/alexcrocha/word-pluralizer#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
