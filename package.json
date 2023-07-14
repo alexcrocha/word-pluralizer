@@ -1,6 +1,6 @@
 {
   "name": "word-pluralizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple word pluralizer and singularizer",
   "main": "index.js",
   "scripts": {
